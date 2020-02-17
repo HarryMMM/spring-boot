@@ -8,7 +8,7 @@
     <insert id="insertUser" parameterType="user">
         insert into user (name,age, sex) values (#{name} ,#{age},#{sex})
     </insert>
-    <select id="getUser" resultType="user">
+    <select id="getUser" resultType="cn.harryai.test.springboot.testmybatis.model.User">
         select * from user where id=#{id}
     </select>
 </mapper>
