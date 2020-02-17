@@ -9,20 +9,9 @@
         <setting name="defaultExecutorType" value="REUSE"/>
     </settings>
     <typeAliases>
-        <typeAlias alias="user" type="cn.harryai.test.springboot.testmybatis.model.User"/>
+        <typeAlias alias="user" type="cn.harryai.test.springboot.testspringandmybatis.model.User"/>
     </typeAliases>
-    <environments default="dev">
-        <environment id="dev">
-            <transactionManager type="JDBC"/>
-            <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://harryai.cn:3306/jdbctest"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
-            </dataSource>
-        </environment>
-    </environments>
     <mappers>
-        <mapper resource="mybatis/userMapper.xml"/>
+        <mapper resource="springAndMybatis/userMapper.xml"/>
     </mappers>
 </configuration>

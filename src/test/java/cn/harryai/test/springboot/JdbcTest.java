@@ -16,7 +16,7 @@ public class JdbcTest {
     @Test
     public void test() {
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-content-jdbc.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("jdbc/spring-content-jdbc.xml");
         UserService userService = applicationContext.getBean("userService", UserService.class);
         User user = new User("harry", 11, "man");
         userService.save(user);
