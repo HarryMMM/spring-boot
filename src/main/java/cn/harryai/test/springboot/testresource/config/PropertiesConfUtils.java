@@ -1,12 +1,12 @@
-package cn.harryai.test.springboot.config;
+package cn.harryai.test.springboot.testresource.config;
 
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
-import static cn.harryai.test.springboot.config.CommonConstans.TEST1;
-import static cn.harryai.test.springboot.config.CommonConstans.TEST2;
+import static cn.harryai.test.springboot.testresource.config.CommonConstans.TEST1;
+import static cn.harryai.test.springboot.testresource.config.CommonConstans.TEST2;
 
 /**
  * @author Harry

@@ -1,4 +1,4 @@
-package cn.harryai.test.springboot.config;
+package cn.harryai.test.springboot.testresource.config;
 
 /**
  * @author Harry

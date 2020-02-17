@@ -1,6 +1,7 @@
 package cn.harryai.test.springboot;
 
-import cn.harryai.test.springboot.config.PropertiesConfUtils;
+import cn.harryai.test.springboot.testaop.Service.UserService;
+import cn.harryai.test.springboot.testresource.config.PropertiesConfUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,6 +19,8 @@ class ApplicationTests {
     private PropertySourcesPlaceholderConfigurer PropertySourcesPlaceholderConfigurer;
     @Value("${nichen:122}")
     private String nicheng;
+    @Autowired
+    private UserService userService;
 
     @Test
     void contextLoads() throws IOException {
@@ -26,6 +29,11 @@ class ApplicationTests {
         System.out.println(PropertiesConfUtils.getProperty("nicheng"));
         System.out.println(PropertiesConfUtils.getProperty("aaa"));
         System.out.println(PropertiesConfUtils.getProperty("bbb"));
+    }
+
+    @Test
+    public void testAop() {
+        userService.createUser("tt", 13);
     }
 
 }
